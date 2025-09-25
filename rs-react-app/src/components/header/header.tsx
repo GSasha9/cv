@@ -1,5 +1,5 @@
-import LanguageSwitcher from '../language-switcher/language-switcher';
-import Profile from '../profile/profile';
+import LanguageSwitcher from '../Language-switcher/Language-switcher';
+import Profile from '../Profile/Profile';
 
 import './header.scss';
 

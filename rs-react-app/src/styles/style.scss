@@ -50,16 +50,20 @@ a:visited {
 
   font-family: $font-family-base;
   max-width: 1000px;
+  gap: $spacing-xxl;
 }
 
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: space-between;
+  padding: $spacing-lg;
 
   width: 100%;
   height: calc(100% - 38.4px);
   background-image: url('./vector.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -79,4 +83,14 @@ a:visited {
   &:hover {
     cursor: pointer;
   }
+}
+
+.title-second {
+  font-weight: $font-weight-normal;
+  text-transform: uppercase;
+  margin-bottom: -20px;
+}
+
+.regular-text {
+  line-height: $line-height-normal;
 }

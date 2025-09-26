@@ -59,43 +59,43 @@ $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
 @mixin respond-xs {
-  @media screen and (min-width: $breakpoint-xs) {
+  @media screen and (max-width: $breakpoint-xs) {
     @content;
   }
 }
 
 @mixin respond-s {
-  @media screen and (min-width: $breakpoint-s) {
+  @media screen and (max-width: $breakpoint-s) {
     @content;
   }
 }
 
 @mixin respond-sm {
-  @media screen and (min-width: $breakpoint-sm) {
+  @media screen and (max-width: $breakpoint-sm) {
     @content;
   }
 }
 
 @mixin respond-md {
-  @media screen and (min-width: $breakpoint-md) {
+  @media screen and (max-width: $breakpoint-md) {
     @content;
   }
 }
 
 @mixin respond-lg {
-  @media screen and (min-width: $breakpoint-lg) {
+  @media screen and (max-width: $breakpoint-lg) {
     @content;
   }
 }
 
 @mixin respond-xl {
-  @media screen and (min-width: $breakpoint-xl) {
+  @media screen and (max-width: $breakpoint-xl) {
     @content;
   }
 }
 
 @mixin respond-xxl {
-  @media screen and (min-width: $breakpoint-xxl) {
+  @media screen and (max-width: $breakpoint-xxl) {
     @content;
   }
 }

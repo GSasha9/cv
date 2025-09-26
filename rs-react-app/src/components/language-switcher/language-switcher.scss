@@ -14,5 +14,10 @@
         color: $text-primary;
         border-bottom: 1px solid $text-primary;
       }
+
+    }
+
+    .active {
+      background-color: $bright-background;
     }
   }

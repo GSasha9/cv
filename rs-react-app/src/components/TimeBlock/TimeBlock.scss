@@ -1,21 +1,28 @@
 @use '../../styles/scss/variables' as *;
 
 .time-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+
+  .time-block__period {
+    height: 30px;
+    background-image: url('./sqrd_line.svg');
+    color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-h4;
     display: flex;
-    flex-direction: column;
-    gap: $spacing-xs;
+    align-items: center;
+    padding: 5px;
 
-    .time-block__period {
-        height: 25px;
-        background-image: url('./sqrd_line.svg');
-        color: white;
-        background-size: contain;
-        background-repeat: no-repeat;
-        font-weight: $font-weight-bold;
-        font-size: $font-size-h4;
+    @include respond-lg {
+      background-color: $primary-text-purple;
     }
+  }
 
-    .time-block__title {
-        font-weight: $font-weight-bold;
-    }
+  .time-block__title {
+    font-weight: $font-weight-bold;
+  }
 }

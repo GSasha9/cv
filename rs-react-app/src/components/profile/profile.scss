@@ -3,6 +3,7 @@
 .profile {
   display: flex;
   width: 100%;
+  align-items: center;
   .profile-photo-container {
     width: 300px;
     perspective: 1000px;
@@ -19,6 +20,7 @@
       font-size: 40px;
       color: $primary-text-purple;
       font-weight: $font-weight-bold;
+      text-align: center;
     }
 
     .profile__role {
@@ -33,6 +35,10 @@
   opacity: 0;
   transform: translateX(-200%) rotate(-180deg);
   animation: roll-in 1.5s ease-out forwards;
+
+  @include respond-lg {
+    width: 250px;
+  }
 }
 
 @keyframes roll-in {

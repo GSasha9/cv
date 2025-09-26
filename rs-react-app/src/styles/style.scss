@@ -48,8 +48,12 @@ a:visited {
   height: 100%;
 
   font-family: $font-family-base;
-  max-width: 1000px;
+  max-width: 1200px;
   gap: $spacing-xxl;
+
+  @include respond-lg {
+    font-size: $font-size-regular;
+  }
 }
 
 .main {
@@ -63,6 +67,12 @@ a:visited {
   background-image: url('./vector.svg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include respond-sm {
+    flex-direction: column;
+    gap: $spacing-xl;
+    align-items: center;
+  }
 }
 
 .container {

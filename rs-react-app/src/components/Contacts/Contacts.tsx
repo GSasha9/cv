@@ -15,7 +15,16 @@ const Contacts = () => {
           className="list-item-pic"
           style={{ backgroundImage: `url(${CONTACTS[el].pic})` }}
         ></span>
-        <span>{CONTACTS[el].content}</span>
+        {el === 'link' ? (
+          <a
+            className="list-item-link"
+            href={`https://${CONTACTS[el].content}`}
+          >
+            {CONTACTS[el].content}
+          </a>
+        ) : (
+          <span>{CONTACTS[el].content}</span>
+        )}
       </li>
     )
   );

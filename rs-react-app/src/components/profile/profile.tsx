@@ -1,8 +1,14 @@
+import { useContext } from 'react';
+
+import { messages } from '../../../messages/messages';
+
 import './profile.scss';
 
-import { CVText } from '@/shared/constants/cv-text';
+import LanguageContext from '@/context/language-context';
 
 const Profile = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <div className="profile">
       <img
@@ -12,8 +18,8 @@ const Profile = () => {
       ></img>
 
       <div className="profile__info">
-        <h1 className="profile__name">{CVText.name.toUpperCase()}</h1>
-        <div className="profile__role">{CVText.role}</div>
+        <h1 className="profile__name">{messages[language].name}</h1>
+        <div className="profile__role">{messages[language].role}</div>
       </div>
     </div>
   );

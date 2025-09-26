@@ -1,4 +1,5 @@
 import AboutMe from '../AboutMe/AboutMe.tsx';
+import Contacts from '../Contacts/Contacts.tsx';
 import Section from '../Section/Section.tsx';
 import Skills from '../Skills/Skills.tsx';
 
@@ -7,6 +8,7 @@ const About = () => {
     <Section width="50%">
       <AboutMe />
       <Skills />
+      <Contacts />
     </Section>
   );
 };

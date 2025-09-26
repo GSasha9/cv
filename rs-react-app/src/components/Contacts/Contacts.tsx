@@ -1,0 +1,31 @@
+import { messages } from '../../../messages/messages';
+import Section from '../Section/Section';
+
+import './Contacts.scss';
+
+import { CONTACTS } from '@/shared/constants/contacts';
+
+const Contacts = () => {
+  const language = 'en';
+
+  const contactsList = (Object.keys(CONTACTS) as (keyof typeof CONTACTS)[]).map(
+    (el) => (
+      <li key={el.slice(0, 4)} className="list-item">
+        <span
+          className="list-item-pic"
+          style={{ backgroundImage: `url(${CONTACTS[el].pic})` }}
+        ></span>
+        <span>{CONTACTS[el].content}</span>
+      </li>
+    )
+  );
+
+  return (
+    <Section width="100%">
+      <h2 className="title-second">{messages[language].contacts}</h2>
+      <ul className="contacts__list">{contactsList}</ul>
+    </Section>
+  );
+};
+
+export default Contacts;

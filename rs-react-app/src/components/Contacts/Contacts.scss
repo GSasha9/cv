@@ -1,0 +1,20 @@
+@use '../../styles/scss/variables' as *;
+
+.contacts__list {
+    display: flex;
+    gap: $spacing-md;
+    flex-direction: column;
+
+    .list-item {
+    display: flex;
+    gap: $spacing-md;
+
+  .list-item-pic {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+  }
+}
+}
+
+

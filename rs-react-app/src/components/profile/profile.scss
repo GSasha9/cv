@@ -4,8 +4,7 @@
   display: flex;
   width: 100%;
   .profile-photo-container {
-    width: 200px;
-    height: 186px;
+    width: 300px;
     perspective: 1000px;
   }
 
@@ -30,8 +29,7 @@
 
 .profile-photo-img {
   display: block;
-  width: 200px;
-  height: 186px;
+  width: auto;
   opacity: 0;
   transform: translateX(-200%) rotate(-180deg);
   animation: roll-in 1.5s ease-out forwards;

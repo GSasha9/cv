@@ -1,8 +1,12 @@
+import { useContext } from 'react';
+
 import { messages } from '../../../messages/messages.ts';
 import Section from '../Section/Section.tsx';
 
+import LanguageContext from '@/context/language-context.tsx';
+
 const AboutMe = () => {
-  const language = 'en';
+  const { language } = useContext(LanguageContext);
 
   return (
     <Section width="100%">

@@ -1,10 +1,13 @@
+import { useContext } from 'react';
+
 import Section from '../Section/Section';
 import TimeBlock from '../TimeBlock/TimeBlock';
 
+import LanguageContext from '@/context/language-context';
 import { experienceConstantsBuilder } from '@/shared/utils/experience-constants-builder';
 
 const Experience = () => {
-  const language = 'en';
+  const { language } = useContext(LanguageContext);
 
   const experience = experienceConstantsBuilder(language);
 

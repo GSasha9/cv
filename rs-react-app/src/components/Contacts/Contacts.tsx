@@ -1,12 +1,15 @@
+import { useContext } from 'react';
+
 import { messages } from '../../../messages/messages';
 import Section from '../Section/Section';
 
 import './Contacts.scss';
 
+import LanguageContext from '@/context/language-context';
 import { CONTACTS } from '@/shared/constants/contacts';
 
 const Contacts = () => {
-  const language = 'en';
+  const { language } = useContext(LanguageContext);
 
   const contactsList = (Object.keys(CONTACTS) as (keyof typeof CONTACTS)[]).map(
     (el) => (

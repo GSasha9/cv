@@ -6,6 +6,32 @@ export const messages = {
     },
     skills: 'Skills',
     contacts: 'Contacts',
+    expirience: {
+      work: [
+        {
+          period: '2024 - ...',
+          title: 'School of Business of BSU',
+          description: 'Programmer',
+        },
+        {
+          period: '2015 - 2023',
+          title: 'BIG-TRAIL',
+          description: 'Insurance manager',
+        },
+      ],
+      education: [
+        {
+          period: '2024',
+          title: 'School of Business of BSU',
+          description: 'Web-designer programmer',
+        },
+        {
+          period: '2014',
+          title: 'School of Business of BSU',
+          description: 'Economist',
+        },
+      ],
+    },
   },
   ru: {
     about: {
@@ -14,5 +40,31 @@ export const messages = {
     },
     skills: 'Навыки',
     contacts: 'Контакты',
+    expirience: {
+      work: [
+        {
+          period: '2024 - ...',
+          title: 'Институт бизнеса БГУ',
+          description: 'Программист',
+        },
+        {
+          period: '2015 - 2023',
+          title: 'ООО БИГ-ТРЭЙЛ',
+          description: 'Менеджер по страхованию',
+        },
+      ],
+      education: [
+        {
+          period: '2024',
+          title: 'Институт бизнеса БГУ',
+          description: 'Веб-дизайнер программист',
+        },
+        {
+          period: '2014',
+          title: 'Институт бизнеса БГУ',
+          description: 'Менеджер-экономист',
+        },
+      ],
+    },
   },
 };

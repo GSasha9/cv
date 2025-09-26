@@ -5,7 +5,7 @@ import Skills from '../Skills/Skills.tsx';
 
 const About = () => {
   return (
-    <Section width="50%">
+    <Section width="45%">
       <AboutMe />
       <Skills />
       <Contacts />

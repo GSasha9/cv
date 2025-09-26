@@ -2,7 +2,7 @@ import './Section.scss';
 
 interface SectionProps {
   width: string;
-  children: React.ReactElement | React.ReactElement[];
+  children: React.ReactNode;
 }
 
 const Section = ({ width, children }: SectionProps) => {

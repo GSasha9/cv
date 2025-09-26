@@ -1,4 +1,5 @@
 import About from './components/About/About';
+import Experience from './components/Experience/Experience';
 import Header from './components/Header/Header';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <Header></Header>
       <main className="main">
         <About />
+        <Experience />
       </main>
     </>
   );

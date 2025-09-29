@@ -27,6 +27,10 @@
       font-size: $font-size-h3;
     }
   }
+
+    @include respond-sm {
+    flex-direction: column;
+  }
 }
 
 .profile-photo-img {

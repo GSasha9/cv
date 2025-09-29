@@ -6,6 +6,6 @@
     gap: $spacing-xl;
 
     @include respond-sm {
-    width: 80% !important;
+    width: 100% !important;
   }
 }

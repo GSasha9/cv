@@ -1,4 +1,7 @@
+import { useState } from 'react';
+
 import Carousel from '../Carousel/Carousel';
+import Modal from '../Modal/Modal';
 import Section from '../Section/Section';
 
 import './Certificates.scss';
@@ -6,13 +9,27 @@ import './Certificates.scss';
 import { CERTIFICATES } from '@/shared/constants/certificates';
 
 const Certificates = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImg, setModalImg] = useState<string | null>(null);
+
+  const handleClick = (img: string) => {
+    setModalImg(img);
+    setIsModalOpen(true);
+  };
+
+  function handleClose() {
+    setIsModalOpen(false);
+    setModalImg(null);
+  }
+
   const picLinks = CERTIFICATES.map((el) => (
-    <a
+    <img
       key={crypto.randomUUID()}
-      href={el}
-      className="certificates__link"
-      style={{ backgroundImage: `url(./${el})` }}
-    ></a>
+      src={`./${el}`}
+      className="certificates__img"
+      onClick={() => handleClick(el)}
+      alt="certificate"
+    ></img>
   ));
 
   return (
@@ -21,6 +38,17 @@ const Certificates = () => {
         <h2 className="title-second">Certificates</h2>
         <Carousel content={picLinks}></Carousel>
       </Section>
+      <Modal isOpen={isModalOpen} handleClose={handleClose}>
+        {modalImg ? (
+          <img
+            src={`./${modalImg}`}
+            alt="certificate"
+            className="certificate__modal-img"
+          />
+        ) : (
+          <span></span>
+        )}
+      </Modal>
     </>
   );
 };

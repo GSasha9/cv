@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 
+import Certificates from '../Certificates/Certificates';
 import Section from '../Section/Section';
 import TimeBlock from '../TimeBlock/TimeBlock';
 
@@ -35,6 +36,9 @@ const Experience = () => {
             key={`${el.title.slice(0, 4)}${el.period.slice(0, 4)}`}
           />
         ))}
+      </Section>
+      <Section width="100%">
+        <Certificates></Certificates>
       </Section>
     </Section>
   );

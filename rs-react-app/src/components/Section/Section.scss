@@ -3,7 +3,7 @@
 .section {
     display: flex;
     flex-direction: column;
-    gap: $spacing-xl;
+    gap: $spacing-xxl;
 
     @include respond-sm {
     width: 100% !important;

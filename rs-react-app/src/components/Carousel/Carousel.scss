@@ -1,0 +1,31 @@
+@use '../../styles/scss/variables' as *;
+
+.carousel {
+  overflow: hidden;
+
+  .carousel__wrapper {
+    display: flex;
+    position: relative;
+    animation: scroll 10s linear infinite;
+    will-change: transform;
+
+    &:hover {
+    animation-play-state: paused;
+  }
+
+    .carousel-item {
+      flex: 0 0 auto;
+      width: 200px;
+      height: 100px;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--scroll-width)));
+  }
+}

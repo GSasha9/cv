@@ -3,6 +3,7 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/cv/',
   plugins: [react()],
   resolve: {
     alias: {

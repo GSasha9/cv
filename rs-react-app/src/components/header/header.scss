@@ -7,7 +7,7 @@
   gap: $spacing-lg;
   padding-top: $spacing-md;
 
-    @include respond-sm {
+  @include respond-sm {
     padding: 20px;
   }
 }

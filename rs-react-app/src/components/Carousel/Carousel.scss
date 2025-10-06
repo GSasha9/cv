@@ -10,8 +10,8 @@
     will-change: transform;
 
     &:hover {
-    animation-play-state: paused;
-  }
+      animation-play-state: paused;
+    }
 
     .carousel-item {
       flex: 0 0 auto;

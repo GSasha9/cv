@@ -28,7 +28,7 @@
     }
   }
 
-    @include respond-sm {
+  @include respond-sm {
     flex-direction: column;
   }
 }

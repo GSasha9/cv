@@ -1,11 +1,11 @@
 @use '../../styles/scss/variables' as *;
 
 .section {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-xxl;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xxl;
 
-    @include respond-sm {
+  @include respond-sm {
     width: 100% !important;
   }
 }

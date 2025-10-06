@@ -1,23 +1,22 @@
-  @use '../../styles/scss/variables.scss' as *;
+@use '../../styles/scss/variables.scss' as *;
 
-  .lang__list {
-    display: flex;
-    width: 100%;
-    justify-content: right;
-    gap: $spacing-lg;
+.lang__list {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  gap: $spacing-lg;
 
-    .lang__list-item {
-      color: $primary-text-purple;
-      border-bottom: 1px transparent solid;
+  .lang__list-item {
+    color: $primary-text-purple;
+    border-bottom: 1px transparent solid;
 
-      &:hover {
-        color: $text-primary;
-        border-bottom: 1px solid $text-primary;
-      }
-
-    }
-
-    .active {
-      background-color: $bright-background;
+    &:hover {
+      color: $text-primary;
+      border-bottom: 1px solid $text-primary;
     }
   }
+
+  .active {
+    background-color: $bright-background;
+  }
+}

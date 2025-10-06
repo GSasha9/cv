@@ -6,4 +6,5 @@ export const SKILLS = [
   'NextJS',
   'Unit Testing',
   'Git',
+  'English (B1-B2)',
 ];

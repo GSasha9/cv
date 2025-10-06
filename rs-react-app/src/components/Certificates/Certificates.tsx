@@ -22,15 +22,21 @@ const Certificates = () => {
     setModalImg(null);
   }
 
-  const picLinks = CERTIFICATES.map((el) => (
-    <img
-      key={crypto.randomUUID()}
-      src={`./${el}`}
-      className="certificates__img"
-      onClick={() => handleClick(el)}
-      alt="certificate"
-    ></img>
-  ));
+  const picLinks = Object.keys(CERTIFICATES).map((el) => {
+    const key = el as keyof typeof CERTIFICATES;
+
+    return (
+      <div className="certificates__img-container" key={crypto.randomUUID()}>
+        <img
+          src={`./${CERTIFICATES[key].pic}`}
+          className="certificates__img"
+          onClick={() => handleClick(CERTIFICATES[key].pic)}
+          alt={CERTIFICATES[key].name}
+        ></img>
+        <p>{CERTIFICATES[key].name}</p>
+      </div>
+    );
+  });
 
   return (
     <>
